@@ -77,7 +77,7 @@
         <h5>Your No.1 Website Developer</h5>
         <!-- <br> -->
         <br>
-        <a href='login.php' class="waves-effect btn-large orange darken-4 waves-light">Get Started</a>
+        <a href='signup.php' class="waves-effect btn-large orange darken-4 waves-light">Get Started</a>
         
       </div>
 

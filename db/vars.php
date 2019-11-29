@@ -4,7 +4,7 @@
 
 $phone_number = '';
 $email = '';
-$password = '00000';
+$password = '';
 $activity_type = '';
 $activity = '';
 $title = '';
