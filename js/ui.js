@@ -4,6 +4,11 @@ $(document).ready(function () {
 
   var current_page = window.location.href;
   
+  var position = current_page.search("email");
+  if (position != -1) {
+    var text = '<span><span class="green-text">STATUS:</span> Email Sent Successfully!</span>';
+    M.toast({ html: text, displayLength: 8000 });
+  }
   var position = current_page.search("pageEdited");
   if (position != -1) {
     var text = '<span><span class="green-text">STATUS:</span> Page Edited Successfully!</span>';

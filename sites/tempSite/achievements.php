@@ -97,7 +97,7 @@ include '../../db/connect.php';
 
           if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-              echo '<a class="carousel-item" href="#one!"><img style="height:200px;" src="../../' . $row["achievement_image"] . '"><h5 class="pink-text">'.$row["achievement_name"].'</h5><p>'.$row["achievement_description"].'</p></a>';
+              echo '<a class="carousel-item" href="#one!"><img style="height:200px;margin-top:-100px;" src="../../' . $row["achievement_image"] . '"><h5 class="pink-text">'.$row["achievement_name"].'</h5><p>'.$row["achievement_description"].'</p></a>';
             }
           }
           ?>

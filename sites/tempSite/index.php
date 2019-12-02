@@ -62,6 +62,8 @@ if (!isset($_COOKIE["school_email"])) {
         </div>
       </a>
       <ul class="right hide-on-med-and-down">
+        <!-- <li> <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a></li> -->
+        <li><a href="#modal1" class="modal-trigger"><i class="material-icons">mail</i></a></li>
         <li class="active"><a href="index.php"><i class="material-icons">home</i></a></li>
         <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Menu<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
@@ -78,6 +80,40 @@ if (!isset($_COOKIE["school_email"])) {
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+
+
+
+
+
+  <!-- MAIL MODAL -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5>Email Us</h5><br />
+      <form autocomplete="on" id="login-form" method="post" action="../../db/email.php">
+        <div class="input-field">
+          <input autocomplete="on" type="text" id="name" name="name" required />
+          <label for="name">Full Name</label>
+        </div>
+        <div class="input-field">
+          <input autocomplete="on" type="text" id="sub" name="sub" required />
+          <label for="sub">Subject</label>
+        </div>
+        <div class="input-field">
+          <input autocomplete="on" type="email" id="login-email" name="email" required />
+          <label for="login-email">Your Email address</label>
+        </div>
+        <div class="input-field">
+          <textarea id="textarea1" name="body" class="materialize-textarea" maxlength="200" data-length="200"></textarea>
+          <label for="textarea1" class="">Message Body</label>
+        </div>
+        <button class="btn green darken-3 z-depth-0" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
 
 
   <div id="index-banner" class="parallax-container">

@@ -8,5 +8,8 @@
     $(".dropdown-trigger").dropdown();
     $('select').formSelect();
     $('.datepicker').datepicker();
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+
