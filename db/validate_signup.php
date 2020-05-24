@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     isset($_POST["sch_name"]) &&
     isset($_POST["email"]) &&
     isset($_POST["motto"]) &&
-    isset($_POST["about_us"]) &&
+    isset($_POST["about_us"]) && 
     isset($_POST["phone_number"]) &&
     isset($_POST["password"]) &&
     !empty($_POST["sch_name"]) &&
